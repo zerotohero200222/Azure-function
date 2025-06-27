@@ -13,8 +13,6 @@ This Terraform configuration deploys an **Azure Function App** using the **Flex 
 ---
 
 ## 📁 Project Structure
-
-.
 ├── main.tf # Terraform infrastructure definitions
 ├── variables.tf # Input variables
 ├── outputs.tf # Outputs after deployment
