@@ -10,22 +10,6 @@ This Terraform configuration deploys an **Azure Function App** using the **Flex 
 - App Service Plan (Flex Plan)
 - Azure Function App (Node.js, customizable)
 
----
-
-## 📁 Project Structure
-├── main.tf # Terraform infrastructure definitions
-├── variables.tf # Input variables
-├── outputs.tf # Outputs after deployment
-├── providers.tf # Provider configurations
-└── .github/workflows/
-    └── terraform-deploy.yml # GitHub Actions CI/CD Pipeline
-
-yaml
-Copy
-Edit
-
----
-
 ## 🛠️ Requirements
 
 - Terraform >= 1.0
