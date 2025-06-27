@@ -52,7 +52,7 @@ resource "azurerm_application_insights" "example" {
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
   application_type    = "web"
-  workspace_id = azurerm_log_analytics_workspace.example.id
+  workspace_id        = azurerm_log_analytics_workspace.example.id
 }
 
 # Create a service plan
@@ -75,11 +75,11 @@ resource "azurerm_function_app_flex_consumption" "example" {
   storage_container_endpoint  = "${azurerm_storage_account.example.primary_blob_endpoint}${azurerm_storage_container.example.name}"
   storage_authentication_type = "StorageAccountConnectionString"
   storage_access_key          = azurerm_storage_account.example.primary_access_key
-  runtime_name                = var.runtime_name
-  runtime_version             = var.runtime_version
-  maximum_instance_count      = 50
-  instance_memory_in_mb       = 2048
-  
-  site_config {
-  }
+
+  runtime_name           = var.runtime_name
+  runtime_version        = var.runtime_version
+  maximum_instance_count = 50
+  instance_memory_in_mb  = 2048
+
+  site_config {}
 }
